@@ -1,0 +1,5 @@
+pre {
+  white-space: pre-wrap; /* Ensures text wraps inside the container */
+  word-wrap: break-word; /* Handles long strings or words */
+  font-size: 0.875rem; /* Optional: Adjust font size for better readability */
+}

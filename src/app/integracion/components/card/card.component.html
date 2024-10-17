@@ -1,0 +1,51 @@
+<mat-card>
+  <mat-card-header>
+    <mat-card-title>
+      {{integracion.r_NombreServicio}}
+    </mat-card-title>
+    <mat-card-subtitle>
+      {{integracion.r_Id}}
+    </mat-card-subtitle>
+  </mat-card-header>
+
+
+  <!--TODO:IMAGEN-->
+
+  <!-- <img mat-card-image [src]="hero | heroImage" [alt]="hero.superhero">
+-->
+
+  <mat-card-content class="mt-2">
+    <h4>{{integracion.r_Descripcion}}</h4>
+    <p>
+      <strong>Primera aparición</strong>
+      {{integracion.r_Sistema_fuente}}
+      <br>
+      <mat-chip-listbox>
+
+        <!--<mat-chip *ngFor="let name of hero.characters.split(',')| slice:0:3" >-->
+        {{integracion.r_Nombre}}
+        <!--</mat-chip>-->
+      </mat-chip-listbox>
+    </p>
+  </mat-card-content>
+
+  <mat-divider></mat-divider>
+
+  <mat-card-actions>
+    <button mat-button mat-raised-button color="primary" [routerLink]="['/integraciones/edit', integracion.r_NOM_TABLA]">
+      <mat-icon>edit</mat-icon>
+      Editar
+    </button>
+
+    <span class="spacer"></span>
+
+    <button mat-button [routerLink]="['/integraciones', integracion.r_NOM_TABLA]">
+      <mat-icon>more_horiz</mat-icon>
+      Más
+    </button>
+
+  </mat-card-actions>
+
+
+
+</mat-card>
